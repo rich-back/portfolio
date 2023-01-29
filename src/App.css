@@ -1,38 +1,46 @@
 .App {
   text-align: center;
+  opacity: 0.8;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: rgb(159, 159, 159);
+  padding: 2rem;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+#light {
+  background-color: #575757;
+  background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#dark {
+  background-color:#0c0c0c;
+  background-image: url("https://www.transparenttextures.com/patterns/wild-flowers.png");}
+
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
 }
 
-.App-link {
-  color: #61dafb;
+#light .main-container {
+  background-color: #afafaf;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#dark .main-container {
+  background-color:#141414;
+}
+
+.switch {
+  display: flex;
+  align-items:flex-end;
+  flex-direction: column;
+  padding: 10px;
+  gap: 5px;
+  
 }
